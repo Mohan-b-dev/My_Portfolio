@@ -128,10 +128,13 @@ export const AboutSection = () => {
                 </div>
               ))}
             </div>
+
+
           </Card>
           <Card>
             <Image src={mapImage} alt="map" />
-            <Image src={smileMemoji} alt="Smiling memoji" />
+            <Image src={smileMemoji} alt="Smiling memoji"
+             />
           </Card>
         </div>
       </div>

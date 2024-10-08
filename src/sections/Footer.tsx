@@ -6,6 +6,10 @@ const footerLinks = [
     href:'#',
   },
   {
+    title:'Discord',
+    href:'#',
+  },
+  {
     title:'Instagram',
     href:'#',
   },

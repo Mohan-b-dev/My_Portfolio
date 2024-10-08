@@ -1,24 +1,19 @@
-import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
+import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 const footerLinks = [
   {
-    title:'Twitter',
-    href:'#',
+    title: "Twitter",
+    href: "#",
   },
   {
-    title:'Discord',
-    href:'#',
+    title: "Discord",
+    href: "#",
   },
   {
-    title:'Instagram',
-    href:'#',
+    title: "Instagram",
+    href: "#",
   },
-  {
-    title:'LinkedIn',
-    href:'#',
-  },
-]
-
+];
 
 export const Footer = () => {
   return (
@@ -39,10 +34,9 @@ export const Footer = () => {
               </a>
             ))}
           </nav>
-          </div>
         </div>
-      
+      </div>
+    <div></div>
     </footer>
   );
 };
-

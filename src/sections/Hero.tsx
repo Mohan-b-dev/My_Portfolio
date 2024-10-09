@@ -53,7 +53,7 @@ export const HeroSection = () => {
           shouldOrbit
           OrbitDuration="36s"
           shouldSpin
-          spinDuration="3s"
+          spinDuration="4s"
         >
           <SparkIcon className="size-10 text-emerald-300/20" />
         </HeroOrbit>

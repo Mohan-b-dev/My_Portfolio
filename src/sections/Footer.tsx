@@ -13,6 +13,10 @@ const footerLinks = [
     title: "Instagram",
     href: "#",
   },
+  {
+    title: "Github",
+    href: "#",
+  },
 ];
 
 export const Footer = () => {
@@ -36,7 +40,6 @@ export const Footer = () => {
           </nav>
         </div>
       </div>
-    <div></div>
     </footer>
   );
 };

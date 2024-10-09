@@ -124,43 +124,45 @@ export const AboutSection = () => {
               />
             </Card>
           </div>
-          <div className="grid gap-8 grid-cols-8 md:grid-cols-5 lg:grid-cols-3 ">
-            <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
-              <CardHeader
-                title="Beyond the Code"
-                description="Explore my interests and hobbies beyond the digital realm."
-                className="px-6 py-6"
-              />
-
-              <div className="relative flex-1">
-                {hobbies.map((hobby) => (
-                  <div
-                    key={hobby.title}
-                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full  py-1.5 absolute"
-                    style={{ left: hobby.left, top: hobby.top }}
-                  >
-                    <span className="font-medium text-gray-950">
-                      {hobby.title}
-                    </span>
-                    <span>{hobby.emoji}</span>
-                  </div>
-                ))}
-              </div>
-            </Card>
-            <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-              <Image
-                src={mapImage}
-                alt="map"
-                className="h-full w-full object-cover object-left-top"
-              />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 rounded-full after:outline-gray-950/30 after:rounded-full">
-                <Image
-                  src={smileMemoji}
-                  alt="Smiling memoji"
-                  className="size-20"
+          <div className="mt-20  flex flex-col gap-8">
+            <div className="grid grid-cols-1 gap-8  md:grid-cols-5 lg:grid-cols-3 ">
+              <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
+                <CardHeader
+                  title="Beyond the Code"
+                  description="Explore my interests and hobbies beyond the digital realm."
+                  className="px-6 py-6"
                 />
-              </div>
-            </Card>
+
+                <div className="relative flex-1">
+                  {hobbies.map((hobby) => (
+                    <div
+                      key={hobby.title}
+                      className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full  py-1.5 absolute"
+                      style={{ left: hobby.left, top: hobby.top }}
+                    >
+                      <span className="font-medium text-gray-950">
+                        {hobby.title}
+                      </span>
+                      <span>{hobby.emoji}</span>
+                    </div>
+                  ))}
+                </div>
+              </Card>
+              <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
+                <Image
+                  src={mapImage}
+                  alt="map"
+                  className="h-full w-full object-cover object-left-top"
+                />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 rounded-full after:outline-gray-950/30 after:rounded-full">
+                  <Image
+                    src={smileMemoji}
+                    alt="Smiling memoji"
+                    className="size-20"
+                  />
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </div>

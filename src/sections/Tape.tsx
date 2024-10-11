@@ -35,7 +35,6 @@ export const TapeSection = () => {
             ))}
           </div>
         </div>
-        <></>
       </div>
     </div>
   );
